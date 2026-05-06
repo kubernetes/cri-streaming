@@ -12,9 +12,9 @@ require (
 	github.com/stretchr/testify v1.11.1
 	go.uber.org/goleak v1.3.0
 	google.golang.org/grpc v1.81.0
-	k8s.io/cri-api v0.0.0
+	k8s.io/cri-api v0.0.0-20260506133030-482f18f8053c
 	k8s.io/klog/v2 v2.140.0
-	k8s.io/streaming v0.0.0
+	k8s.io/streaming v0.0.0-20260424110149-99242c80ea4f
 	k8s.io/utils v0.0.0-20260210185600-b8788abfbbc2
 )
 
@@ -30,9 +30,4 @@ require (
 	google.golang.org/genproto/googleapis/rpc v0.0.0-20260414002931-afd174a4e478 // indirect
 	google.golang.org/protobuf v1.36.12-0.20260120151049-f2248ac996af // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
-)
-
-replace (
-	k8s.io/cri-api => ../cri-api
-	k8s.io/streaming => ../streaming
 )
