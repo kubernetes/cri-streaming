@@ -11,10 +11,10 @@ require (
 	github.com/gorilla/websocket v1.5.4-0.20250319132907-e064f32e3674
 	github.com/stretchr/testify v1.11.1
 	go.uber.org/goleak v1.3.0
-	google.golang.org/grpc v1.81.1
-	k8s.io/cri-api v0.0.0-20260710112045-52bdbf87d4e4
+	google.golang.org/grpc v1.82.1
+	k8s.io/cri-api v0.0.0
 	k8s.io/klog/v2 v2.140.0
-	k8s.io/streaming v0.0.0-20260710095143-d1a4397cb62c
+	k8s.io/streaming v0.0.0
 	k8s.io/utils v0.0.0-20260626114624-be93311217bd
 )
 
@@ -33,4 +33,9 @@ require (
 	google.golang.org/genproto/googleapis/rpc v0.0.0-20260526163538-3dc84a4a5aaa // indirect
 	google.golang.org/protobuf v1.36.12-0.20260120151049-f2248ac996af // indirect
 	gopkg.in/yaml.v3 v3.0.1 // indirect
+)
+
+replace (
+	k8s.io/cri-api => ../cri-api
+	k8s.io/streaming => ../streaming
 )
