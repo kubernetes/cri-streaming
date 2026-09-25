@@ -12,9 +12,9 @@ require (
 	github.com/stretchr/testify v1.12.1
 	go.uber.org/goleak v1.3.0
 	google.golang.org/grpc v1.82.2
-	k8s.io/cri-api v0.0.0-20260911150216-8f649dc10621
+	k8s.io/cri-api v0.0.0
 	k8s.io/klog/v2 v2.140.0
-	k8s.io/streaming v0.0.0-20260904174501-68d535607555
+	k8s.io/streaming v0.0.0
 )
 
 require (
@@ -24,10 +24,15 @@ require (
 	go.opentelemetry.io/otel/sdk v1.44.0 // indirect
 	go.opentelemetry.io/otel/trace v1.44.0 // indirect
 	go.yaml.in/yaml/v3 v3.0.5 // indirect
-	golang.org/x/net v0.57.0 // indirect
-	golang.org/x/sys v0.47.0 // indirect
-	golang.org/x/text v0.41.0 // indirect
+	golang.org/x/net v0.59.0 // indirect
+	golang.org/x/sys v0.48.0 // indirect
+	golang.org/x/text v0.42.0 // indirect
 	google.golang.org/genproto/googleapis/rpc v0.0.0-20260526163538-3dc84a4a5aaa // indirect
 	google.golang.org/protobuf v1.36.12 // indirect
 	k8s.io/utils v0.0.0-20260626114624-be93311217bd // indirect
+)
+
+replace (
+	k8s.io/cri-api => ../cri-api
+	k8s.io/streaming => ../streaming
 )
